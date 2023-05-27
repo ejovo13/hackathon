@@ -1,0 +1,22 @@
+{
+    "name": "Green Mail",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "This is my extension",
+    "content_scripts": [
+      {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions": [
+        "contextMenus",
+        "storage",
+        "tabs",
+        "scripting",
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

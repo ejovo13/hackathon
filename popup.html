@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+         Green Mail
+      </h1>
+      <p class="subtitle">
+        Earn Carbon Credits while cleaning out your mailbox!
+      </p>
+    </div>
+
+    <form class="box">
+        <div class="field">
+          <label class="label">Sent by</label>
+          <div class="control">
+            <input id="sender_input" class="input" placeholder="e.g. amazon">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Title contains</label>
+          <div class="control">
+            <input id="title_input" class="input" placeholder="Annoying Title!">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Email contains</label>
+          <div class="control">
+            <input id="email_input" class="input" placeholder="I am a nigerian prince">
+          </div>
+        </div>
+
+        <label class="checkbox">
+          <input id="case_checkbox"type="checkbox">
+          Case Sensitive
+        </label>
+        <!-- <button class="button is-primary">Sign in</button> -->
+      </form>
+      <div class="buttons is-centered">
+        <button id="search_button" class="button is-primary">Search</button>
+      </div>
+      <div class="buttons is-centered">
+        <button id="test_button" class="button is-primary">test</button>
+        <script src="on_search.js"></script>
+      </div>
+  </section>
+  </body>
+</html>
